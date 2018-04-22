@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>jogo de adivinha</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="script.js"></script>
+
+	<style>
+		#n1{height: 200px;width: 200px;border:1px solid #000;
+			float:left;margin-right:10px;font-size:100px;text-align:center;
+			line-height: 200px;background-color:#EEE; 
+		}
+		#n2{height: 200px;width: 200px;border:1px solid #000;
+			float:left;margin-right:10px;font-size:100px;text-align:center;
+			line-height: 200px;background-color:#EEE;
+		}
+		button{width:410px;height:40px;margin-top:10px;font-size:20px;}
+		#centro {width:1000px;height:1000px;position:absolute;top:35%;left:35%;}
+		body{overflow: hidden; font-family: arial, sans-serif;background:#40E0D0;}
+
+	</style>
+</head>
+
+<body onload="resetar();">
+
+
+<h1 style="text-align: center; color: #ff0000; font-weight:bold;">COMPARE OS NUMEROS</h1>
+<div id="centro">
+<div id="n1">0</div>
+<input type="text" id="n2"/>
+<div style="clear:both;"></div>
+<button onclick="verificar();">Verificar</button>
+<div style="clear:both;"></div>
+<button onclick="resetar();">Resetar</button>
+</div>
+</div>
+
+
+</body>
+</html>
